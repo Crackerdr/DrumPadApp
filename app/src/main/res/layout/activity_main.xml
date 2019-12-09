@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#bdbdbd"
+    tools:context=".MainActivity">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/back2"/>
+
+    <TableLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/glGameBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:padding="8dp"
+        android:stretchColumns="*"
+        >
+    <!--Row 1-->
+    <TableRow>
+
+    <ImageButton
+        android:id="@+id/red_neon_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/red_neon_1"
+        android:layout_weight="1"
+        />
+    <ImageButton
+        android:id="@+id/dark_blue_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/dark_blue_2"
+        />
+    <ImageButton
+        android:id="@+id/neon_pink_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/neon_pink_3"
+        />
+    </TableRow>
+    <!--Row 2-->
+    <TableRow>
+    <ImageButton
+    android:id="@+id/mint_4"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+        android:src="@drawable/mint_4"
+        android:layout_weight="1"
+    />
+    <ImageButton
+        android:id="@+id/peach_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/peach_5"
+        android:layout_weight="1"
+        />
+    <ImageButton
+        android:id="@+id/yellow_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/yellow_6"
+        android:layout_weight="1"
+        />
+    </TableRow>
+    <!--Row 3-->
+    <TableRow>
+    <ImageButton
+        android:id="@+id/blue_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/blue_7"
+        android:layout_weight="1"
+        />
+    <ImageButton
+        android:id="@+id/orange_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/orange_9"
+        android:layout_weight="1"
+        />
+    <ImageButton
+        android:id="@+id/green_9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/green_9"
+        android:layout_weight="1"
+        />
+
+    </TableRow>
+    </TableLayout>
+</RelativeLayout>
